@@ -44,7 +44,8 @@ async function getData(enlaces, menuOptions, page) {
       const tmp = {};
       tmp.title = document.querySelector(".p-ttl").innerText;
       tmp.fech = document.querySelector(".ind-time").innerText;
-      tmp.loc = document.querySelector(".venue-event").innerText;
+      tmp.venue = document.querySelector(".locatn b").innerText;
+      tmp.locations = document.querySelector(".locatn p").textContent;
       tmp.category = document.querySelector(cat).innerText;
       return tmp;
     }, menuOptions);
